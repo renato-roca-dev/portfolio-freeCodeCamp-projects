@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    width: 100%;
+    background-color: #F77604;
+    padding: 26px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navbar{
+    width: fit-content;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+#navbar ul li a{
+    color: white;
+    font-size: 20px;
+}
+#navbar ul li a:hover, .anchor-media:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#welcome-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+    background-color: #231B12;
+    text-align: center;
+}
+#welcome-section h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#welcome-section p{
+    color: #F77604;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+#projects{
+    padding: 64px 0;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #F77604;
+}
+#projects-tiles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+#projects h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.project-tile{
+    width: 500px;
+    height: fit-content;
+    box-shadow: 1px 1px black;
+}
+.project-image{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+.project-image img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.project-text{
+    margin-top: -10px;
+    background-color: #231B12;
+    padding: 20px;
+    text-align: center;
+}
+.project-text p, #work-together p{
+    color: white;
+    font-size: 20px;
+}
+.project-anchor:hover > .project-text p{
+    text-decoration: underline;
+    text-decoration-color: #F77604;
+}
+#work-together{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 0;
+    background-color: #231B12;
+    color: white;
+    text-align: center;
+}
+#work-together h2{
+    font-size: 52px;
+    color: white;
+    margin-bottom: 8px;
+}
+#social-medias-anchor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.anchor-media{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.anchor-media i{
+    font-size: 30px;
+}
+footer{
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    background-color: #F77604;
+}
+@media screen and (max-width: 1024px){
+    #projects-tiles {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-tile {
+        width: 80%;
+    }
+}

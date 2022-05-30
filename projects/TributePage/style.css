@@ -1,0 +1,68 @@
+#title{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #eee;
+}
+#title h1{
+    font-size: 50px;
+}
+#title p{
+    font-size: 20px;
+}
+#main{
+    background-color: #eee;
+    padding: 40px;
+}
+#img-div{
+    background-color: white;
+    padding: 30px ;
+}
+#image{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+#img-caption{
+    padding: 10px 0;
+    text-align: center;
+}
+#tribute-info{
+    width: 35%;
+    margin: 0 auto;
+}
+#tribute-info ul li{
+    padding: 10px 0;
+    font-size: 18px;
+}
+#tribute-info h2{
+    text-align: center;
+}
+.bornIn{
+    font-weight: 700;
+    color: black;
+}
+#tribute-citation{
+    font-size: 20px;
+    font-style: italic;
+}
+blockquote{
+    margin: 0;
+}
+#tribute-link-anchor{
+    text-align: center;
+}
+#tribute-link-anchor{
+    padding: 10px 0;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+@media screen and (max-width: 1024px){
+    #tribute-info {
+        width: 90%;
+    }
+    #main{
+        padding: 0;
+    }
+}

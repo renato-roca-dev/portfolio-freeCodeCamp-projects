@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+body{
+    background: linear-gradient(115deg,rgba(58, 58, 158, 0.8),rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#introduction-texts{
+    text-align: center;
+    padding: 32px 0;
+    color: white;
+}
+#form-div{
+    width: 40%;
+    margin: 0 auto;
+}
+#survey-form{
+    border-radius: 8px;
+    padding: 40px;
+    background-color: #1b1b32cc;
+}
+.input-text, .select-input, .checkbox-radio-input, .input-textarea, .input-text label, .checkbox-radio-input p{
+    font-size: 18px;
+    padding: 15px 0;
+    color: white;
+}
+.input-text input, .select-dropdown{
+    font-size: 17px;
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 100%;
+    color: #495057;
+}
+#checkApply{
+    font-size: 15px;
+}
+.checkbox-radio-input{
+    display: flex;
+    flex-direction: column;
+}
+.radio-input, .checkbox-input{
+    padding: 4px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.radio-input input, .checkbox-input input{
+    height: 20px;
+    width: 20px;
+}
+.radio-input label, .checkbox-input label{
+    font-size: 18px;
+}
+#textareaComment{
+    font-size: 17px;
+    color: #495057;
+    margin-top: 8px;
+    resize: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+}
+#submit{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #37af65;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 12px;
+    color: white;
+}
+#submit:hover, .radio-input input:hover, .radio-input label:hover, .checkbox-input input:hover, .checkbox-input label:hover, .select-dropdown:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+    #form-div{
+        width: 90%;
+    }
+}
